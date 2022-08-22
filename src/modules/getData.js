@@ -1,3 +1,4 @@
+import { format } from "path";
 import renderData from "./renderData";
 
 const getWeather = (() => {

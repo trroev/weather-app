@@ -4,7 +4,7 @@ Weather forecasting site using the [OpenWeather](https://openweathermap.org/) AP
 
 **Link to project:** [Live Preview](https://trroev.github.io/weather-app/)
 
-![page preview image]()
+![page preview image](/dist/images/app-screenshot.png)
 
 ## How It's Made:
 

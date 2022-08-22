@@ -85,3 +85,45 @@ button:hover {
   border: 2px solid #333;
   color: #f7f7f7;
 }
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+.location {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.current-temp,
+.feels-like,
+.high-temp,
+.low-temp,
+.humidity {
+  font-size: 1.1rem;
+}
+
+img {
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.1rem;
+  height: calc(5vw + 18rem);
+  z-index: -1;
+}
+
+@media (max-width: 450px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+}

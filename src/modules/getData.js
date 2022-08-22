@@ -3,7 +3,7 @@ import renderData from "./renderData";
 
 const getWeather = (() => {
   async function getWeatherData(location) {
-    const openWeatherAPI = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=8ab43353ad33f5538c80510eb9c20f0e&units=imperial`;
+    const openWeatherAPI = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=8ab43353ad33f5538c80510eb9c20f0e&units=imperial`;
 
     try {
       const response = await fetch(openWeatherAPI, { mode: "cors" });

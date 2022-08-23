@@ -12,15 +12,15 @@ body {
   padding: 0;
   font-family: "Karla", sans-serif;
   height: 100vh;
-  width: 100vw;
+  background-color: #108dc7;
 }
 
 .header {
   display: flex;
   align-items: center;
-  background-color: #333;
-  color: white;
   padding: 1rem;
+  background-color: #33333399;
+  color: #108dc7;
 }
 
 .title {
@@ -38,6 +38,7 @@ img.sun {
 }
 
 .form-control {
+  margin-top: 3rem;
   padding: 3rem;
   overflow: hidden;
   width: 33%;
@@ -89,6 +90,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   margin: 2rem;
+  padding: 1rem;
 }
 
 .location {

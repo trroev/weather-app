@@ -29,13 +29,29 @@ body {
   font-weight: 800;
 }
 
-.material-symbols-outlined {
-  font-size: calc(6vw + 0.3em);
-  font-weight: 800;
+img.sun {
+  height: calc(7vw + 3em);
 }
 
 .main {
+  --bg-image: url(./images/clouds.jpg);
+  --bg-imgage-opacity: 0.5;
+
   display: flex;
+  height: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: var(--bg-imgage-opacity);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
 }
 
 .form-control {
@@ -89,7 +105,7 @@ button:hover {
 .weather {
   display: flex;
   flex-direction: column;
-  margin: 3rem;
+  margin: 2rem;
 }
 
 .location {
@@ -110,14 +126,6 @@ button:hover {
   font-size: 1.1rem;
 }
 
-img {
-  position: absolute;
-  bottom: 0.1rem;
-  right: 0.1rem;
-  height: calc(5vw + 18rem);
-  z-index: -1;
-}
-
 @media (max-width: 450px) {
   .main {
     flex-direction: column;
@@ -125,5 +133,9 @@ img {
 
   .form-control {
     width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
   }
 }
